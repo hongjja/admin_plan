@@ -1,0 +1,31 @@
+<h1>{{title}}</h1>
+<table>
+    <tr>
+        <th>이름</th>
+        <th>컨텐트</th>
+        <th>x좌표</th>
+        <th>y좌표</th>
+    </tr>
+    <tr *ngFor="let item of json">
+        <td>{{item.name}}</td>
+        <td>{{item.content}}</td> 
+        <td>{{item.x}}</td>
+        <td>{{item.y}}</td>
+        <td><button type="" (click)="update(item)">스팟수정</button></td>
+        <td><button type="" (click)="delete(item.id)">스팟삭제</button></td>
+    </tr>
+    <tr><br></tr>
+    <tr>
+        <td><input type="" name="" value="" [(ngModel)]="data.name"></td>
+        <td><input type="" name="" value="" [(ngModel)]="data.content"></td>
+        <td><input type="" name="" value="" [(ngModel)]="data.x"></td>
+        <td><input type="" name="" value="" [(ngModel)]="data.y"></td>
+        <td><button type="" (click)="modify(data)">수정하기</button></td>
+        <td><button type="" (click)="add(data)">추가하기</button></td>
+    </tr>
+</table>
+
+<!--<button type="" (click)="modifySpot()">수정</button>-->
+
+
+
