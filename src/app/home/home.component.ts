@@ -11,7 +11,7 @@ import { SpotProvider } from '../providers/spot.provider';
 })
 export class HomeComponent implements OnInit {
 
-  title = 'TEACH YOUR PLAN'
+  //title = 'TEACH YOUR PLAN'
   
   id:any; // 수정할때 받을거
   json:any;
@@ -31,6 +31,7 @@ export class HomeComponent implements OnInit {
     );
   }
   
+
   add(data) {
     this.spotProvider.postSpot(this.data.name, this.data.content, this.data.x, this.data.y)
     .subscribe(

@@ -1,0 +1,19 @@
+<table>
+    <tr>
+        <th>spotNo</th>
+        <th>image</th>
+        <th>order</th>
+    </tr>
+    <tr *ngFor="let item of json">
+        <td>{{item.spotNo}}</td>
+        <td>{{item.image}}</td>
+        <td>{{item.order}}</td>
+        <td><button type="" (click)="delete(item.spotNo, item.order)">삭제</button></td>
+    </tr><br>
+    <tr>
+        <td><input type="" name="" value="" [(ngModel)]="data.spotNo"></td>
+        <td><input type="" name="" value="" [(ngModel)]="data.image"></td>
+        <td><input type="" name="" value="" [(ngModel)]="data.order"></td>
+        <td><button type="" (click)="add(data)">추가하기</button></td>
+    </tr>
+</table>

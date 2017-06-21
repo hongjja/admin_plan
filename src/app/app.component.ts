@@ -10,6 +10,6 @@ export class AppComponent {
   constructor() {
    }
 
-  title = 'app';
+  title = 'TEACH YOUR PLAN';
 }
 

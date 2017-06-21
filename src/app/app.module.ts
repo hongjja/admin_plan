@@ -7,18 +7,34 @@ import { HttpService } from './services/http.service';
 import { HomeComponent } from './home/home.component';
 import { Http, HttpModule } from '@angular/http';
 import { ServerAddr } from './services/server.addr';
+import { AttrComponent } from './attr/attr.component';
+import { ImageComponent } from './image/image.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    AttrComponent,
+    ImageComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
       {
         path: '',
+        component: AppComponent
+      },
+      {
+        path: 'home', // spot/home
         component: HomeComponent
+      },
+      {
+        path: 'attr',
+        component: AttrComponent
+      },
+      {
+        path: 'image',
+        component: ImageComponent
       }
     ]),
     HttpModule,

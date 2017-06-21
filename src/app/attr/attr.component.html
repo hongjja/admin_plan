@@ -1,0 +1,22 @@
+<table>
+    <tr>
+        <th>spotNo</th>
+        <th>master</th>
+        <th>detail</th>
+        <th>value</th>
+    </tr>
+    <tr *ngFor="let item of json">
+        <td>{{item.spotNo}}</td>
+        <td>{{item.master}}</td>
+        <td>{{item.detail}}</td>
+        <td>{{item.value}}</td>
+        <td><button type="" (click)="delete(item.spotNo, item.master, item.detail)">삭제</button></td>
+    </tr><br>
+    <tr>
+        <td><input type="" name="" value="" [(ngModel)]="data.spotNo"></td>
+        <td><input type="" name="" value="" [(ngModel)]="data.master"></td>
+        <td><input type="" name="" value="" [(ngModel)]="data.detail"></td>
+        <td><input type="" name="" value="" [(ngModel)]="data.value"></td>
+        <td><button type="" (click)="add(data)">추가하기</button></td>
+    </tr>
+</table>
